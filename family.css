@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f08080;
+}
+
+h2 {
+    color: #ff6347;
+}
+
+.family {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.family-member {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.family-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+.sentence {
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.activities {
+    padding: 20px;
+ 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+ul li:before {
+    content: "⭐";
+    margin-right: 10px;
+}

@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>ANTHROPONYM</title>
+    <link rel="shortcut icon" href="./pics/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav id="navbar">
+            <div class="container">
+                <div class="showcase-primary">
+                    <img class="logoimg" src="./pics/favicon-32x32.png" alt="">
+                    <h1 class="logo"> <a href="#">ANTHROPONYM</a></h1>
+                    <ul>
+                        <li> <a href="#" class="current">Home</a></li>
+                        <li> <a href="about.html">About</a></li>
+                        <li> <a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="showcase">
+            <div class="showcase-content">
+                
+                </div>
+                <h1><span class="text-primary">Anthroponym</span> Learning names of Humans</h1>
+                <p>ORIGN, HISTORY, MEANING
+                </p>
+                
+            </div>
+
+        </div>
+    </header>
+
+    <section id="home-info" class="bg-dark">
+        <div class="info-img"></div>
+        <div class="info-content">
+            <h2><span clas="text-primary">What's Anthroponyms  </span></h2>
+            <p>Anthroponyms refer to human names, and this category of names can be broken down into various subtypes,
+                 each with its own cultural, historical, and linguistic significance. These names are used to identify
+                  and distinguish individuals, and they can carry personal, familial, or societal meaning.
+                  Anthroponyms are a fascinating aspect of linguistics, specifically within the study of 
+                  onomastics (the study of names). Below is a more detailed explanation of anthroponyms, 
+                  their types, origins, and significance.
+            </p>
+            <a href="about.html" class="btn btn-light">Read More </a>
+        </div>
+    </section>
+
+    <section class="body11">
+        <div class="container11" id="dictionary">
+            <h1 class="heading1" sytle="font-color:black">The meaning of Names</h1>
+    
+    <!-- Search input and search button -->
+            <input type="text" id="wordInput" placeholder="Enter a word">
+            <button class="button1" id="searchButton" onclick="searchWord()">Search</button>
+    
+    <!-- Search result -->
+            <div id="wordDetails" style="display:none;">
+            <h2 class="heading2" id="wordOutput"></h2>
+            <p class="heading3" id="meaningOutput"></p>
+      
+         <!-- Display image related to the word -->
+            <img id="wordImage" src="" alt="Word Image" style=" display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%; align-items: center;justify-content:center; text-align: center; max-width: 300px; height: auto; margin-top: 20px;">
+      
+            <button class="button1" id="audioButton" onclick="playAudio()">Play</button> <!-- This button will now read the word's name aloud -->
+        </div>
+
+    <!-- Error message -->
+        <p id="errorMessage" style="color: red; display:none;"></p>
+    </section>
+    
+    <section class="sectio__container service__container" id="service">
+        <h2 class="heading"><br>Funny Vocabulary
+            <hr>
+        </h2>
+        <embed class="heading__description">
+          <article style="text-align: center;"> <b>Wellcome to Funny Vocublary!</b> <br>"Funny Vocabulary offers a delightful way to learn essential topics like health, family, nations, and animals. Each section is designed to make language learning fun and engaging, filled with colorful images and exciting facts to enhance your knowledge of the world around you!"</article>
+        </p>
+        <div class="service__grid">
+            <div class="service__card">
+                <img src="./pics/family.jpg" alt="SHipping">
+                <div>
+                    <h4>Family</h4>
+                    <p>
+                        "Discover the words that define the people closest to you with Funny Vocabulary's Family section! Whether it's parents, siblings, or relatives, this colorful guide helps you understand the bonds that shape your family."
+                    </p>
+                    <div class="service__btn">
+                        <a href="family.html"><button class="btn">see</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="service__card">
+                <img src="./pics/health.jpg" alt="AIR CARGO">
+                <div>
+                    <h4>Health</h4>
+                    <p>
+                        "Funny Vocabulary's Health section makes learning about wellness a fun journey! From healthy eating habits to staying active, explore exciting words that help you take care of your body and mind."
+                    <div class="service__btn">
+                        <a href="health.html"><button class="btn">see</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="service__card">
+                <img src="./pics/animals.avif" alt="train">
+                <div>
+                    <h4>Animals</h4>
+                    <p>
+                        "Get ready for a wild adventure with Funny Vocabulary's Animals section! From pets to exotic creatures, this section brings the animal kingdom to life with fun facts and easy-to-learn vocabulary."
+                    <div class="service__btn">
+                        <a href="animals.html"><button class="btn">see</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="service__card">
+                <img src="./pics/nation.jfif" alt="truck">
+                <div>
+                    <h4>Nations</h4>
+                    <p>
+                        "Travel around the world with Funny Vocabulary's Nations section! Learn about different countries, their cultures, and flags, all through playful and engaging words that make geography fun."
+                    </p>
+                    <div class="service__btn">
+                        <a href="nations.html"><button class="btn">see</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="body00">
+        <div class="container00">
+    <!-- Start Button -->
+            <button class="button00" id="startButton" onclick="startQuiz()">Start Quiz</button>
+
+        <!-- Quiz Container -->
+            <div id="quizContainer" style="display:none;">
+                <h3 id="questionNumber"></h3>
+                <p id="questionText"></p>
+            
+                <button class="optionButton" onclick="selectOption(0)" style="background-color: white;"></button>
+                <button class="optionButton" onclick="selectOption(1)" style="background-color: white;"></button>
+                <button class="optionButton" onclick="selectOption(2)" style="background-color: white;"></button>
+                <button class="optionButton" onclick="selectOption(3)" style="background-color: white;"></button>
+            </div>
+      
+            <button class="button00" id="previousButton" style="display:none;" onclick="previousQuestion()">Back</button>
+            <button class="button00" id="nextButton" style="display:none;" onclick="nextQuestion()">Next</button>
+            <button class="button00" id="submitButton" style="display:none;" onclick="submitQuiz()">Submit</button>
+            <div id="resultsSection" style="display:none;">
+                <p>Your Score: <span id="score"></span></p>
+                <p>Percentage: <span id="percentage"></span>%</p>
+                <p>Mark: <span id="mark"></span></p>
+                <p id="quote"></p> <!-- Display motivational quote -->
+                <img id="motivationalImage" src="./english/images/welldone.jfif" alt="Motivational Image" style="max-width: 300px;">
+                
+            </div>
+        </div>
+    
+    <!-- Results Section -->
+       
+    </section>
+    
+    
+    <div class="clr"></div>
+    <footer id="main-footer">
+        <p>ID platform  &copy; 2024, All rights reserved.<hr><b> @cadet_Mo'ydinov</p>
+    </footer>
+    <script src="./english/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

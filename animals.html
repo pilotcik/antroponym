@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTHROPONYM</title>
+    <link rel="shortcut icon" href="./pics/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="animals.css">
+</head>
+<body>
+    <header>
+        <h1>Learn About Animals!</h1>
+        <p>Explore and discover exciting facts about different animals!</p>
+    </header>
+
+    <section class="animals">
+        <h2>Meet the Animals</h2>
+        
+        <div class="animal" id="lion">
+            <img src="./pics/lion.jpg" alt="Lion" class="animal-image">
+            <h3>Lion</h3>
+            <p>The lion is called the "King of the Jungle".</p>
+            <button onclick="showFact('lion')">Click for Fact</button>
+            <p class="fact" id="lion-fact"></p>
+        </div>
+
+        <div class="animal" id="elephant">
+            <img src="./pics/elephant.jpg" alt="Elephant" class="animal-image">
+            <h3>Elephant</h3>
+            <p>Elephants are the largest land animals.</p>
+            <button onclick="showFact('elephant')">Click for Fact</button>
+            <p class="fact" id="elephant-fact"></p>
+        </div>
+
+        <div class="animal" id="giraffe">
+            <img src="./pics/giraffe.jpg" alt="Giraffe" class="animal-image">
+            <h3>Giraffe</h3>
+            <p>Giraffes are the tallest animals in the world.</p>
+            <button onclick="showFact('giraffe')">Click for Fact</button>
+            <p class="fact" id="giraffe-fact"></p>
+        </div>
+
+        <div class="animal" id="tiger">
+            <img src="./pics/tiger.jpg" alt="Tiger" class="animal-image">
+            <h3>Tiger</h3>
+            <p>Tigers have beautiful striped fur.</p>
+            <button onclick="showFact('tiger')">Click for Fact</button>
+            <p class="fact" id="tiger-fact"></p>
+        </div>
+
+        <div class="animal" id="panda">
+            <img src="./pics/panda.jpg" alt="Panda" class="animal-image">
+            <h3>Panda</h3>
+            <p>Pandas mostly eat bamboo and love to sleep.</p>
+            <button onclick="showFact('panda')">Click for Fact</button>
+            <p class="fact" id="panda-fact"></p>
+        </div>
+
+        
+    </section>
+
+    <section class="activities">
+        <h2>Fun Animal Activities!</h2>
+        <ul>
+            <li>Try to make animal sounds!</li>
+            <li>Draw your favorite animal and color it.</li>
+            <li>Learn more fun facts about your favorite animal.</li>
+            <li>Visit a zoo to see some of these animals in person!</li>
+            <li>Watch animal documentaries to learn more about their habitats.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting our Animal Vocabulary Page!</p>
+    </footer>
+
+    <script src="animals.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTHROPONYM</title>
+    <link rel="shortcut icon" href="./pics/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="family.css">
+</head>
+<body>
+    <header>
+        <h1>Learn About Family!</h1>
+        <p>Explore and discover family members with fun words and pictures!</p>
+    </header>
+
+    <section class="family">
+        <h2>Meet the Family Members</h2>
+        
+        <div class="family-member" id="mother">
+            <img src="./pics/mother.jpg" alt="Mother" class="family-image">
+            <h3>Mother</h3>
+            <p>This is your mother. She loves and takes care of you every day.</p>
+            <button onclick="showSentence('mother')">Click for Sentence</button>
+            <p class="sentence" id="mother-sentence"></p>
+        </div>
+
+        <div class="family-member" id="father">
+            <img src="./pics/father.jpg" alt="Father" class="family-image">
+            <h3>Father</h3>
+            <p>This is your father. He helps and protects you.</p>
+            <button onclick="showSentence('father')">Click for Sentence</button>
+            <p class="sentence" id="father-sentence"></p>
+        </div>
+
+        <div class="family-member" id="brother">
+            <img src="./pics/brother.jpg" alt="Brother" class="family-image">
+            <h3>Brother</h3>
+            <p>This is your brother. He is a boy who shares your family.</p>
+            <button onclick="showSentence('brother')">Click for Sentence</button>
+            <p class="sentence" id="brother-sentence"></p>
+        </div>
+
+        <div class="family-member" id="sister">
+            <img src="./pics/sister.jpg" alt="Sister" class="family-image">
+            <h3>Sister</h3>
+            <p>This is your sister. She is a girl in your family.</p>
+            <button onclick="showSentence('sister')">Click for Sentence</button>
+            <p class="sentence" id="sister-sentence"></p>
+        </div>
+
+        <div class="family-member" id="grandmother">
+            <img src="./pics/grandmother.jpg" alt="Grandmother" class="family-image">
+            <h3>Grandmother</h3>
+            <p>This is your grandmother. She is your mother’s or father’s mother.</p>
+            <button onclick="showSentence('grandmother')">Click for Sentence</button>
+            <p class="sentence" id="grandmother-sentence"></p>
+        </div>
+
+        <div class="family-member" id="grandfather">
+            <img src="./pics/grandfather.jpg" alt="Grandfather" class="family-image">
+            <h3>Grandfather</h3>
+            <p>This is your grandfather. He is your mother’s or father’s father.</p>
+            <button onclick="showSentence('grandfather')">Click for Sentence</button>
+            <p class="sentence" id="grandfather-sentence"></p>
+        </div>
+    </section>
+
+    <section class="activities">
+        <h2>Fun Family Activities!</h2>
+        <ul>
+            <li>Play games like hide and seek with your siblings or cousins!</li>
+            <li>Help your mom or dad in the kitchen.</li>
+            <li>Ask your grandparents to read you a story before bed.</li>
+            <li>Take a walk in the park with your family.</li>
+            <li>Draw pictures of your family members!</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting our Family Vocabulary Page!</p>
+    </footer>
+
+    <script src="family.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div class="msg ">
+                    <img src="C:\Users\Public\html\img\tele.png">
+                    <h3><a href="https://telegram.me/Moydinov_S">TELEGRAM</h3>
+                    <p><b>@Moydinov_S </p>
+                </div>
+                <div class="msg ">
+                    <img src="C:\Users\Public\html\img\insta.png">
+                   <h3><a href="https://www.instagram.com/_de.fender">INSTAGRAM</h3>
+                    <p><b>@_de.fender</p>
+                </div>

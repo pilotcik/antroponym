@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTHROPONYM</title>
+    <link rel="shortcut icon" href="./pics/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="health.css">
+</head>
+<body>
+    <header>
+        <h1>Health is Wealth!</h1>
+        <p>Learn about healthy habits, food, and fitness!</p>
+    </header>
+
+    <section class="health">
+        <h2>Stay Healthy with These Tips!</h2>
+
+        <div class="health-topic" id="exercise">
+            <img src="./pics/exercise.jpg" alt="Exercise" class="health-image">
+            <h3>Exercise</h3>
+            <p>Exercise keeps our body strong and healthy.</p>
+            <button onclick="showFact('exercise')">Click for Fact</button>
+            <p class="fact" id="exercise-fact"></p>
+        </div>
+
+        <div class="health-topic" id="nutrition">
+            <img src="./pics/nutrition.jpg" alt="Nutrition" class="health-image">
+            <h3>Nutrition</h3>
+            <p>Eating a balanced diet gives us energy and keeps us healthy.</p>
+            <button onclick="showFact('nutrition')">Click for Fact</button>
+            <p class="fact" id="nutrition-fact"></p>
+        </div>
+
+        <div class="health-topic" id="sleep">
+            <img src="./pics/sleep.jpg" alt="Sleep" class="health-image">
+            <h3>Sleep</h3>
+            <p>Getting enough sleep helps our body to recharge.</p>
+            <button onclick="showFact('sleep')">Click for Fact</button>
+            <p class="fact" id="sleep-fact"></p>
+        </div>
+
+        <div class="health-topic" id="water">
+            <img src="./pics/water.jpg" alt="Water" class="health-image">
+            <h3>Water</h3>
+            <p>Drinking enough water is important for staying hydrated.</p>
+            <button onclick="showFact('water')">Click for Fact</button>
+            <p class="fact" id="water-fact"></p>
+        </div>
+
+        <div class="health-topic" id="hygiene">
+            <img src="./pics/Hygiene.jpg" alt="Hygiene" class="health-image">
+            <h3>Hygiene</h3>
+            <p>Good hygiene practices help prevent illness.</p>
+            <button onclick="showFact('hygiene')">Click for Fact</button>
+            <p class="fact" id="hygiene-fact"></p>
+        </div>
+    </section>
+
+    <section class="activities">
+        <h2>Fun Health Activities!</h2>
+        <ul>
+            <li>Try doing 10 push-ups or jumping jacks every morning.</li>
+            <li>Eat a colorful plate of fruits and vegetables for lunch today!</li>
+            <li>Drink at least 8 glasses of water today!</li>
+            <li>Sleep for at least 8 hours to feel refreshed.</li>
+            <li>Wash your hands before eating and after using the restroom.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting our Health Vocabulary Page!</p>
+    </footer>
+
+    <script src="health.js"></script>
+</body>
+</html>
