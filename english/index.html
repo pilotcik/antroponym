@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Dictionary Web App</h1>
+    
+    <!-- Search input and search button -->
+    <input type="text" id="wordInput" placeholder="Enter a word">
+    <button id="searchButton" onclick="searchWord()">Search</button>
+    
+    <!-- Search result -->
+    <div id="wordDetails" style="display:none;">
+      <h2 id="wordOutput"></h2>
+      <p id="meaningOutput"></p>
+      
+      <!-- Display image related to the word -->
+      <img id="wordImage" src="" alt="Word Image" style="max-width: 300px; height: auto; margin-top: 20px;">
+      
+      <button id="audioButton" onclick="playAudio()">Play</button> <!-- This button will now read the word's name aloud -->
+    </div>
+
+    <!-- Error message -->
+    <p id="errorMessage" style="color: red; display:none;"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

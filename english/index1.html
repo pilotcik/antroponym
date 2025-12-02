@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Start Button -->
+    <button id="startButton" onclick="startQuiz()">Start Quiz</button>
+
+    <!-- Quiz Container -->
+    <div id="quizContainer" style="display:none;">
+      <h3 id="questionNumber"></h3>
+      <p id="questionText"></p>
+      
+      <div>
+        <button class="optionButton" onclick="selectOption(0)"></button>
+        <button class="optionButton" onclick="selectOption(1)"></button>
+        <button class="optionButton" onclick="selectOption(2)"></button>
+        <button class="optionButton" onclick="selectOption(3)"></button>
+      </div>
+      
+      <button id="previousButton" style="display:none;" onclick="previousQuestion()">Back</button>
+      <button id="nextButton" onclick="nextQuestion()">Next</button>
+      <button id="submitButton" style="display:none;" onclick="submitQuiz()">Submit</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="resultsSection" style="display:none;">
+      <h3>Your Score</h3>
+      <p>Score: <span id="score"></span></p>
+      <p>Percentage: <span id="percentage"></span>%</p>
+      <p>Mark: <span id="mark"></span></p>
+      <p id="quote"></p> <!-- Display motivational quote -->
+      <img id="motivationalImage" src="" alt="Motivational Image" style="max-width: 300px;">
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
